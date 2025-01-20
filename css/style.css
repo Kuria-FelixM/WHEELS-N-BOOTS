@@ -1,0 +1,79 @@
+/* custom variables */
+
+:root {
+    --primary-color: #4E342E;
+    --secondary-color: #757575;
+    --light-color: #212121 ;
+    --dark-color: #D84315;
+}
+
+  /*Fonts*/
+  
+  @font-face {
+    font-family: 'Zuume';
+    src: url('../fonts/zuume.otf') format('opentype');
+    font-weight: bold;
+    
+  }
+
+  @font-face{
+    font-family: 'bebas';
+    src: url('../fonts/BebasNeue.ttf') format('ttf');
+  }
+  
+  
+  h1, h2 {
+    font-family: 'Zuume', sans-serif;
+    font-size: 70px;
+  }
+
+  h3{
+    font-family: 'bebas', sans-serif;
+    font-size: 70px;
+  }
+  
+  
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    background:url('../img/rbgg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.sidebar {
+    
+}
+
+/* General styling for all links */
+.nav-link {
+    font-family: 'Zuume', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:  #212121; 
+    text-decoration: none; 
+    letter-spacing: 1px; 
+  }
+  
+  /* Hover effect */
+  .nav-link:hover {
+    color: #D84315; 
+     
+  }
+
+.main-content {
+}
+
+
+.footer{
+    background-color: #212121;
+}
