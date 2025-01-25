@@ -14,7 +14,7 @@
     font-weight: bold;
     
   }
-
+  
   @font-face{
     font-family: 'bebas';
     src: url('../fonts/BebasNeue.ttf') format('ttf');
@@ -25,42 +25,80 @@
     padding: 0;
 }
 
+section:nth-child(2n-1){
+  background-color: rgba(117, 117, 117, 0.1);
+  
+}
+
 @media (min-width: 768px) {
-  #about, #products, #footer{
-      margin-left: 250px;
+  #about, #products, #footer, #recent-endevours, #customCarousel{ 
+      margin-left: 200px;
     }
 }
 
 @media (min-width: 768px) {
   .hero .container{
-    padding-left: 250px;
+    padding-left: 200px;
   }
 }
 
-
   
-  
-  h1, h2 {
+  h1 {
     font-family: 'Zuume', sans-serif;
-    font-size: 70px;
-    color: #4E342E;
+    font-size: 60px;
+    color: #212121;
+    font-weight: bolder;
   }
 
-  h3{
+  h2{
+    font-family: 'Zuume', sans-serif;
+    font-size: 30px;
+    color: #4E342E;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: 'Zuume', sans-serif;
+    font-size: 40px;
+    color: #212121;
+    font-weight: bold;
+  }
+
+  h4{
     font-family: 'bebas', sans-serif;
-    font-size: 70px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-family: 'Zuume', sans-serif;
+      font-size: 40px;
+      color: #212121;
+      font-weight: bolder;
+      padding-left: 10px;
+    }   
   }
   
 .hero {
-    background: url('../img/rbgg.jpeg') no-repeat center center;
+    background: url('../img/gh.png') no-repeat right center;
     background-size: cover;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #757575;
+  opacity: .1;
 }
 
 #sidenav{
-  width: 250px;
+  width: 200px;
   background-color: transparent !important;
   transition: left 0.3s ease, background-color 0.3s ease;
 }
@@ -82,14 +120,15 @@
 
  /* Sidebar when opened */
  #sidebar.open {
-  left: 0; /* Slide in */
+  left: 0; 
+
 }
 
   /* Toggler Button */
   .navbar-toggler {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    right: 20px;
     z-index: 1050; /* Ensure it's above the sidebar */
     display: flex;
     align-items: center;
@@ -100,7 +139,7 @@
     @media (max-width: 768px) {
       #sidenav {
         position: fixed;
-        left: -250px; /* Sidebar starts hidden */
+        left: -200px; /* Sidebar starts hidden */
         transition: left 0.3s ease;
       }
     
@@ -108,3 +147,31 @@
         left: 0; /* Sidebar slides in */
       }
     }
+
+    .recent-endevours img {
+      object-fit: cover; /* Maintains proportions while filling the space */
+    }
+
+  /* Reduce the height of all columns */
+  .carousel-item .row {
+    height: 350px; /* Adjust this as needed */
+  }
+
+  /* Style for left and right columns */
+  .small-column img {
+    opacity: 0.5; /* De-emphasize */
+    transition: all 0.5s ease; /* Smooth hover effect */
+  }
+
+  /* Style for center column */
+  .center-column img {
+    opacity: 1; /* Highlight */
+    transform: scale(1.1); /* Slight zoom */
+    transition: all 0.5s ease;
+  }
+
+  /* On hover, make the smaller columns slightly larger */
+  .small-column img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
