@@ -19,7 +19,7 @@
     </section>
 
 
-    <button class="navbar-toggler d-md-none" type="button" aria-label="Toggle navigation" onclick="toggleSidenav()">
+    <button class="navbar-toggler d-md-none " type="button" aria-label="Toggle navigation" onclick="toggleSidenav()">
       <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></i></span>
     </button>
 
@@ -27,7 +27,7 @@
     <!-- SIDEBAR -->
     <nav class="navbar fixed-top vh-100" id="sidenav">
       <div class="container-fluid flex-colmn align-items-start h-100">
-        <img src="img/logo.png" class="w-100 pt-5" alt="...">
+        <img src="img/logo.png" class="w-100 pt-0 pt-md-5" alt="...">
 
         <div class="flex-column ms-4 ps-2">
           <ul class="nav flex-column">
@@ -56,11 +56,43 @@
     <section class="about" id="about">
       <div class="container-sm">
         <div class="row justify-content-center">
-          <div class="col-3">
-            <img src="img/logo.png" class="w-75" alt="logo">
+          <div class="col m-md-5 p-md-5">
+            <h2 class="px-5 pt-5 mx-5">I am haunted by my future goals,not my past failures. I am haunted by what i may still become.I am haunted by my own continued thirst for evolution. It is a lifelong quest for more knowledge, more courage, more humility and more belief.</h2>
+            <h4 class="ps-5  pb-5 ms-5">David Goggins</h4>
           </div>
-          <div class="col-5">
-            <p class="pt-5">"Life is not measured by the miles traveled, but by the moments that take your breath away. Embrace the wild, conquer the road, and forge your path with the grit to rise, repair, and thrive."</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="latest-expeditions" class="p-3">
+      <h2 class="p-2">Latest Expeditions</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/bgg.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Mt Kenya</h3>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/pg.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Mt Kilimanjaro</h3>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/gh-.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Mountain caps</h3>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+            </div>
           </div>
         </div>
       </div>
@@ -69,37 +101,65 @@
 
     <section class="recent-endevours" id="recent-endevours">
       <div class="container-fluid m-md-5">
+        <!-- Profile Section -->
         <div class="row">
-          <h2>Recent Endevours</h2>
-          <div class="col-md-5 ">
-            <img src="img/courosel.jpeg" class="w-100 " alt="...">
+          <h2 class="text-center my-4">Profile</h2>
+          <div class="col-12 col-md-5 mb-4 mb-md-0">
+            <img src="img/bgg.jpeg" class="w-100 rounded" alt="Ultrarunner">
           </div>
-          <div class="col-md-5">
-            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+          <div class="col-12 col-md-5">
+            <h4 class="m-4">Ultrarunner</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-5">
-            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+      
+        <!-- Mountain Climber Section -->
+        <div class="row mt-0">
+          <div class="col-12 col-md-5 order-2 order-md-1">
+            <h4 class="m-3">Mountain Climber</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
           </div>
-          <div class="col-md-5">
-            <img src="img/pg.jpeg" class="w-100" alt="...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5">
-            <img src="img/bike.jpeg" class="w-100" alt="...">
-          </div>
-          <div class="col-md-5">
-            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+          <div class="col-12 col-md-5 order-1 order-md-2 mb-4 mb-md-0">
+            <img src="img/pg.jpeg" class="w-100 rounded" alt="Mountain Climber">
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-5">
-            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+      
+        <!-- Biker Section -->
+        <div class="row mt-0">
+          <div class="col-12 col-md-5 mb-4 mb-md-0">
+            <img src="img/courosel.jpeg" class="w-100 rounded" alt="Biker">
           </div>
-          <div class="col-md-5">
-            <img src="img/bgg.jpeg" class="w-100" alt="...">
+          <div class="col-12 col-md-5">
+            <h4 class="m-3">Biker</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <section id="custom-rides">
+      <div class="container p-3">
+        <h2 class="p-3">Custom Rides</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4"> 
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/greenmule.jpeg" class="card-img-top rounded-circle img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">The Green Mule</h4>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/ghost.jpeg" class="card-img-top rounded-circle img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Ghost</h4>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis expedita fugit facilis sunt?</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,9 +167,9 @@
 
 
     <section id="customCarousel">
-      <div class="container-lg">
+      <div class="container-lg m-3">
         <h2>AFFILIATES</h2>
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
@@ -164,7 +224,7 @@
             </div>
           </div>
     
-          <!-- Carousel controls -->
+          <!-- Carousel controls --> 
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -181,20 +241,19 @@
     <section class="footer" id="footer">
       <div class="container-fluid">
         <div class="row">
-          <div class="col">
-            <h4>Follow Me</h4>
-            <p class="text-black">twitter</p>
-            <p class="text-black">instagram</p>
-            <p class="text-black">facebook</p>
+          <div class="col m-5">
+            <h4 class="mb-2">Follow Me</h4>
+            <p class="text-black"><i class="fa-brands fa-x-twitter"></i>  Twitter</p>
+            <p class="text-black"><i class="fa-brands fa-instagram"></i>  Instagram</p>
+            <p class="text-black"><i class="fa-brands fa-square-facebook"></i>  Facebook</p>
           </div>
-          <div class="col">
+          <div class="col m-5">
             <h4>Contact</h4>
-            <p class="text-black">twitter</p>
-            <p class="text-black">instagram</p>
-            <p class="text-black">facebook</p>
+            <p class="text-black"><i class="fa-solid fa-phone"></i>   +254 700 000</p>
+            <p class="text-black"><i class="fa-regular fa-envelope"></i> wheelsnboots</p>
           </div>
         </div>
-        <p>wheelsNboots © 2025 all rights reserved</p>
+        <h5 class="text-center">wheelsNboots © 2025 all rights reserved</h5>
       </div>
     </section>
 

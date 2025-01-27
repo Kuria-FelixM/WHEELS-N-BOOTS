@@ -31,7 +31,7 @@ section:nth-child(2n-1){
 }
 
 @media (min-width: 768px) {
-  #about, #products, #footer, #recent-endevours, #customCarousel{ 
+  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides{ 
       margin-left: 200px;
     }
 }
@@ -52,19 +52,25 @@ section:nth-child(2n-1){
 
   h2{
     font-family: 'Zuume', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     color: #4E342E;
     font-weight: bold;
   }
 
   h3 {
     font-family: 'Zuume', sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     color: #212121;
     font-weight: bold;
   }
-
-  h4{
+  
+  h4 {
+    font-family: 'Zuume', sans-serif;
+    font-size: 30px;
+    color: #212121;
+    font-weight: bold;
+  }
+  h5{
     font-family: 'bebas', sans-serif;
     font-size: 20px;
   }
@@ -76,7 +82,21 @@ section:nth-child(2n-1){
       color: #212121;
       font-weight: bolder;
       padding-left: 10px;
-    }   
+    }  
+    
+    h2{
+      font-family: 'Zuume', sans-serif;
+      font-size: 25px;
+      color: #4E342E;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-family: 'Zuume', sans-serif;
+      font-size: 20px;
+      color: #212121;
+      font-weight: bold;
+    }
   }
   
 .hero {
@@ -110,12 +130,11 @@ section:nth-child(2n-1){
 }
 
 
-/* Links Styling */background: linear-gradient(to bottom, rgba(128, 128, 128, 0.8), rgba(192, 192, 192, 0.6)); /* Semi-transparent gradient */
 #sidenav .nav-link {
   color: #1d1c1c; /* White text for visibility */
   font-size: 1rem; /* Adjust font size */
-  padding: 10px 15px; /* Add padding for spacing */
-  text-decoration: none; /* Remove underlines */
+  padding: 10px 15px; 
+  text-decoration: none; 
 }
 
  /* Sidebar when opened */
@@ -174,4 +193,8 @@ section:nth-child(2n-1){
   .small-column img:hover {
     transform: scale(1.05);
     opacity: 0.8;
+  }
+
+  #latest-expeditions img{
+    height: 200px;
   }
