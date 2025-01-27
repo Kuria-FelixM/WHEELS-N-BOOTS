@@ -1,22 +1,14 @@
+// Function to toggle sidenav and logo visibility
 function toggleSidenav() {
     const sidenav = document.getElementById('sidenav');
+    const logo = document.getElementById('logo');
     sidenav.classList.toggle('open');
 
-    // Check if the sidenav is open
+    // Show the logo only when the sidenav is hidden
     if (sidenav.classList.contains('open')) {
-        // Add the logo dynamically to the sidenav
-        if (!document.getElementById('sidenav-logo')) {
-            const logo = document.createElement('div');
-            logo.id = 'sidenav-logo';
-            logo.innerHTML = '<img src="../img/logo.png" alt="Logo" style="width: 100%; max-width: 150px; margin: 10px auto; display: block;">';
-            sidenav.prepend(logo); // Add the logo at the top of the sidenav
-        }
+        logo.style.display = 'none'; // Hide logo
     } else {
-        // Remove the logo when the sidenav is closed
-        const logo = document.getElementById('sidenav-logo');
-        if (logo) {
-            logo.remove();
-        }
+        logo.style.display = 'block'; // Show logo
     }
 }
 
@@ -27,10 +19,9 @@ document.body.addEventListener("click", (e) => {
 
     if (!sidenav.contains(e.target) && !toggler.contains(e.target)) {
         sidenav.classList.remove('open');
-        // Remove the logo when the sidenav is closed
-        const logo = document.getElementById('sidenav-logo');
-        if (logo) {
-            logo.remove();
-        }
+
+        // Ensure logo reappears when sidenav is closed
+        const logo = document.getElementById('logo');
+        logo.style.display = 'block';
     }
 });

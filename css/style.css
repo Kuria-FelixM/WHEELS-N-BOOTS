@@ -147,7 +147,7 @@ section:nth-child(2n-1){
   /* Toggler Button */
   .navbar-toggler {
     position: fixed;
-    top: 20px;
+    top: 35px;
     right: 20px;
     z-index: 1050; /* Ensure it's above the sidebar */
     display: flex;
