@@ -17,11 +17,6 @@
       </div>      
     </section>
 
-    <!-- Logo -->
-    <div class="d-md-none" id="logo" style="display: block; position: fixed; top: 0px; left: 10px; z-index: 1100;">
-      <img src="img/logo.png" alt="Logo" style="width: 80px;">
-    </div>
-
 
     <button class="navbar-toggler d-md-none " type="button" aria-label="Toggle navigation" onclick="toggleSidenav()">
       <span class="navbar-toggler-icon"><i class="fa-solid fa-bars fa-2xl"></i></span>
@@ -50,14 +45,28 @@
             <li class="nav-item">
               <a href="guidedtours.html" class="nav-link">GuidedTours</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Projects</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Projects</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="projectdeathzone.html">Project Death Zone</a></li>
+                
+                <li><a class="dropdown-item" href="#">Project Nepal</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="shop.html" class="nav-link">Shop</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Blogs</a>
+              <a href="enquire.html" class="nav-link">Enquire</a>
+            </li>
+            <li class="nav-item">
+              <a href="blogs.html" class="nav-link">Blogs</a>
             </li>
           </ul>
         </div>
@@ -65,11 +74,11 @@
     </nav>
 
 
-    <section class="about" id="about">
-      <div class="container-sm">
+    <section class="about">
+      <div class="container-sm"  id="about">
         <div class="row justify-content-center">
           <div class="col m-md-5 p-md-5">
-            <h2 class="px-5 pt-5 mx-2 mx-md-5">I am haunted by my future goals,not my past failures. I am haunted by what i may still become.I am haunted by my own continued thirst for evolution. It is a lifelong quest for more knowledge, more courage, more humility and more belief.</h2>
+            <h2 class="px-5 pt-5 mx-2 mx-md-2">I am haunted by my future goals,not my past failures. I am haunted by what i may still become.I am haunted by my own continued thirst for evolution. It is a lifelong quest for more knowledge, more courage, more humility and more belief.</h2>
             <h4 class="ps-2 ps-md-5 pb-5 ms-5">David Goggins</h4>
           </div>
         </div>
@@ -77,8 +86,8 @@
     </section>
     
 
-    <section class="recent-endevours" id="recent-endevours">
-      <div class="container-fluid">
+    <section class="recent-endevours" >
+      <div class="container-fluid" id="recent-endevours">
         <!-- expeditions Section -->
         <div class="row">
           <h2 class="my-4">Recent Expeditions</h2>
@@ -117,35 +126,100 @@
     </section>
 
 
-    <section id="custom-rides">
-      <div class="container p-3">
-        <h2 class="p-3">Custom Rides</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="img/greenmule.jpeg" class="card-img-top rounded-circle img-fluid" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">The Green Mule</h4>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis.</p>
+    <section class="recent-endevours" >
+      <div class="container-fluid p-5" id="recent-endevours">
+        <!-- expeditions Section -->
+        <div class="row">
+          <h2 class="my-4">Gear Room</h2>
+          <div class="col-12 col-md-5 mb-4 mb-md-0">
+            <img src="img/gearroom.jpeg" class="w-100 rounded" alt="Ultrarunner">
+          </div>
+          <div class="col-12 col-md-5">
+            <h4 class="m-4">Gears</h4>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Climbing Gear
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">A climbing harness designed for comfort and safety during ascents and descents.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Helmet
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">A durable helmet to protect against falling rocks and head impacts.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    First Aid Kit
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">A compact first aid kit with essential supplies for treating minor injuries.</div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="img/ghost.jpeg" class="card-img-top rounded-circle img-fluid" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">Ghost</h4>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto soluta eos mollitia cumque magnam, id delectus dolor explicabo ratione illo, nulla ex optio, nemo nobis.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+        </div>  
     </section>
 
 
-    <section id="customCarousel" class="pt-3">
+
+      <!-- Instagram Section -->
+      <section >
+       <div class="container py-5" id="instagram">
+        <h2 class="text-center mb-4">Instagram </h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/gearroom.jpeg" class="card-img-top imginsta" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/hgh.jpeg" class="card-img-top imginsta" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/gh1.png" class="card-img-top imginsta" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/hero.jpeg" class="card-img-top imginsta" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/pg.jpeg" class="card-img-top imginsta" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/ghost.jpeg" class="card-img-top imginsta" alt="...">
+            </div>
+          </div>
+        </div>
+       </div>
+      
+      </section>
+
+      
+
+
+
+    <section class="pt-3" id="customCarousel">
       <div class="container-lg m-3">
         <h2>AFFILIATES</h2>
         <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -217,8 +291,11 @@
     </section>
 
 
-    <section class="footer" id="footer">
-      <div class="container-fluid">
+    
+
+
+    <section class="footer">
+      <div class="container-fluid" id="footer">
         <div class="row">
           <div class="col m-5">
             <h4 class="mb-2">Follow Me</h4>

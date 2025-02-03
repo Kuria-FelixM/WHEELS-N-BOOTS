@@ -26,21 +26,15 @@
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-section:nth-child(2n){
+section:nth-child(2n+1){
   background-color: rgba(117, 117, 117, 0.1);
   
 }
 
 @media (min-width: 768px) {
-  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about{ 
+  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about,#achievements,#instagram{ 
       margin-left: 200px;
     }
-}
-
-@media (min-width: 768px) {
-  .hero .container{
-    padding-left: 200px;
-  }
 }
 
   
@@ -109,12 +103,25 @@ section:nth-child(2n){
     position: relative;
 }
 
-
-
 .hero img{
   padding-top:0px;
   width: auto;
   height: 50vh;
+}
+
+.hero-abt {
+  background: url('../img/abt-hero.jpeg') no-repeat right center;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-abt img{
+padding-top:0px;
+width: auto;
+height: 50vh;
 }
 
 @media (max-width:768px){
@@ -125,9 +132,20 @@ section:nth-child(2n){
   }
 }
 
-.hero .txt{
-  padding-top: 60vh;
-  padding-left: 250px;
+
+@media (max-width:768px){
+  .hero-abt img{
+    width: auto;
+    height: 35vh;
+
+  }
+}
+
+@media(min-width:768px) {
+  .hero-abt .container{
+  
+    padding-left: 100px;
+  }
 }
 
 .hero::after {
@@ -145,7 +163,7 @@ section:nth-child(2n){
   transition: left 0.3s ease, background-color 0.3s ease;
 }
 .flex-column{
-  padding-top: 120px;
+  padding-top: 110px;
 }
 @media (max-width: 768px) {
   .navbar {
@@ -262,3 +280,15 @@ section:nth-child(2n){
   #custom-rides img{
     height: 250px;
   }
+
+
+/*about section*/
+.about .container,.achievements{
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+
+.imginsta{
+  height: 40vh;
+}

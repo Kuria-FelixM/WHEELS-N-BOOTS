@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WHEELS-N-BOOTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="hero">
+    <section class="hero-abt">
         <div class="container">
           <img src="img/logo.png" alt="Logo" class="position-absolute start-50 translate-middle-x">
-         <div class="contain" style="padding-top: 300px;">
-            <h2 class="">Who is James Muhia</h1>
+         <div class="container" style="padding-top: 300px;">
+            <h2 class="px-3">Who is James Muhia</h1>
             <h1>
                  Chief Adventurer at WheelsnBoots
             </h1>
@@ -21,59 +22,121 @@
     </section>
 
 
-
-        <!-- SIDEBAR -->
-        <nav class="navbar fixed-top vh-100" id="sidenav">
-            <div class="container-fluid flex-colmn align-items-start h-100">
-              <div class="flex-column ms-4 ps-2">
-                <ul class="nav flex-column">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      About
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">About</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="about.html">James Muhia</a></li>
-                      
-                      <li><a class="dropdown-item" href="#">The Three Elements</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a href="guidedtours.html" class="nav-link">GuidedTours</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Blogs</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+    <button class="navbar-toggler d-md-none " type="button" aria-label="Toggle navigation" onclick="toggleSidenav()">
+      <span class="navbar-toggler-icon"><i class="fa-solid fa-bars fa-2xl"></i></span>
+    </button>
 
 
-          <section class="about px-5" id="about">
-            <div class="container px-5" style="padding: 0px;">
+
+    <!-- SIDEBAR -->
+    <nav class="navbar fixed-top vh-100" id="sidenav">
+      <div class="container-fluid flex-colmn align-items-start h-100">
+        <div class="flex-column ms-4 ps-2">
+          <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item">About</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="about.html">James Muhia</a></li>
+                
+                <li><a class="dropdown-item" href="#">The Three Elements</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="guidedtours.html" class="nav-link">GuidedTours</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Projects</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="projectdeathzone.html">Project Death Zone</a></li>
+                
+                <li><a class="dropdown-item" href="#">Project Nepal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="enquire.html" class="nav-link">Enquire</a>
+            </li>
+            <li class="nav-item">
+              <a href="blogs.html" class="nav-link">Blogs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+          <section class="about" id="about">
+            <div class="container py-5">
                 <h2>James Muhia </h2>
-                <p class="px-5">
+                <p class="">
                     Outdoor Enthusiast & Adventure Seeker
                    James is a passionate explorer with a love for the great outdoors. As a recreational trail and mountain runner, he thrives on challenging terrains, pushing his limits in nature’s most rugged landscapes. His passion for heights extends to rock climbing and mountaineering expeditions, where he embraces the thrill of seeking summit peaks and experiencing breathtaking vistas.
-                   Beyond the trails and mountains, James is also an adventure motorcyclist, navigating remote and untamed terrains on two wheels in search of new experiences. Whether running through wild trails, climbing towering summits, or riding across vast landscapes, he is always seeking the next great adventure.
+                   <br>Beyond the trails and mountains, James is also an adventure motorcyclist, navigating remote and untamed terrains on two wheels in search of new experiences. Whether running through wild trails, climbing towering summits, or riding across vast landscapes, he is always seeking the next great adventure.
     
                 </p>
               </div>
+          </section>
+
+          <section class="achievements" id="achievements">
+            <div class="container py-5">
+              <h2>Some of his notable adventures</h2>
+              <p>
+                Manaslu Summit, Nepal (8,163M above sea level). Together with his climbing partner, Cheruiyot Kirui, they became the first Africans to summit an 8000m peak without the use of supplemental oxygen or Sherpa support on 24th September 2023. This despite the fact that James had lost some of his fingers to frostbite on a previous expedition in April 2011.
+                Ama Dablam summit, Nepal (6,812M above sea level). One of the most technically challenging mountains in the Himalayas, requiring a mix of snow, rock and ice climbing skills. The mountain that took a bite off his fingers.
+                Peak Lenin summit, Kyrgyzstan (7,134M above sea level). He became the first Kenyan to summit a 7000M peak in July 2018.
+                Khan Tengri, Kyrgyzstan (7,010M above sea level). The world’s most northern 7000M peak. Due to its high latitude, the climb was quite challenging due to thinner air, severe erratic weather and a shorter climbing season.
+                Summiting 5 East African peaks in 6 days (Rwenzori, Margherita Peak - Uganda, Mt. Muhavura - Uganda, Mt. Kenya, Mt. Meru - Tanzania and Mt. Kilimanjaro). Only taking short naps in between traveling from one mountain to the other, while at times using public transport, this is the most intensive and physically demanding challenge so far.
+                Ultra Trail Cape Town (UTCT). A 100km trail run through Capetown’s table mountains. 
+                Mt. Kenya 3 routes run. A 96km run through Mt. Kenya’s 3 main hiking routes, summiting Lenana point three times.
+                Aberdare Traverse hike. A 100km self-supported hike traversing the length of the Aberdare range from South (Njabini) to North (Shamata). One of the most satisfying expeditions.
+
+              </p>
+            </div>
+          </section>
+
+
+
+          <section class="footer">
+            <div class="container-fluid" id="footer">
+              <div class="row">
+                <div class="col m-5">
+                  <h4 class="mb-2">Follow Me</h4>
+                  <p class="text-black"><i class="fa-brands fa-x-twitter"></i>  Twitter</p>
+                  <p class="text-black"><i class="fa-brands fa-instagram"></i>  Instagram</p>
+                  <p class="text-black"><i class="fa-brands fa-square-facebook"></i>  Facebook</p>
+                </div>
+                <div class="col m-5">
+                  <h4>Contact</h4>
+                  <p class="text-black"><i class="fa-solid fa-phone"></i>   +254 700 000</p>
+                  <p class="text-black"><i class="fa-regular fa-envelope"></i> wheelsnboots</p>
+                </div>
+              </div>
+              <h5 class="text-center">wheelsNboots © 2025 all rights reserved</h5>
+            </div>
           </section>
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
