@@ -73,7 +73,7 @@ section:nth-child(2n+1){
   @media (max-width: 768px) {
     h1 {
       font-family: 'Zuume', sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       color: #4E342E;
       font-weight: bolder;
       padding-left: 10px;
