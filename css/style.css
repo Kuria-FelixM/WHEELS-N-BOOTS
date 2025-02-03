@@ -32,7 +32,7 @@ section:nth-child(2n){
 }
 
 @media (min-width: 768px) {
-  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides{ 
+  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about{ 
       margin-left: 200px;
     }
 }
