@@ -283,9 +283,12 @@ height: 50vh;
 
 
 /*about section*/
-.about .container,.achievements{
-  padding-left: 120px;
-  padding-right: 120px;
+@media (min-width:768px) {
+  .about .container,.achievements{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
 }
 
 
