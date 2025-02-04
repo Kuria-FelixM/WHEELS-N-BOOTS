@@ -32,7 +32,7 @@ section:nth-child(2n+1){
 }
 
 @media (min-width: 768px) {
-  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about,#achievements,#instagram,#gallery,#hero-e,#contact{ 
+  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about,#achievements,#instagram,#gallery,#hero-e,#contact,#carousel-press{ 
       margin-left: 200px;
     }
 }
@@ -320,3 +320,18 @@ height: 50vh;
 .gallery-item {
   margin-bottom: 15px;
 }
+
+
+
+@media (min-width: 768px) {
+  .copyright{
+    padding-left: 300px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .copyright{
+    padding-left: 55px;
+  }
+}
+
