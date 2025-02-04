@@ -32,7 +32,7 @@ section:nth-child(2n+1){
 }
 
 @media (min-width: 768px) {
-  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about,#achievements,#instagram,#gallery{ 
+  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about,#achievements,#instagram,#gallery,#hero-e,#contact{ 
       margin-left: 200px;
     }
 }
@@ -94,7 +94,7 @@ section:nth-child(2n+1){
     }
   }
   
-.hero {
+.hero  {
     background: url('../img/gh1.png') no-repeat right center;
     background-size: cover;
     height: 100vh;
@@ -119,6 +119,21 @@ section:nth-child(2n+1){
 }
 
 .hero-abt img{
+padding-top:0px;
+width: auto;
+height: 50vh;
+}
+
+.hero-mon {
+  background: url('../img/hr-mon.jpeg') no-repeat right center;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-mon img{
 padding-top:0px;
 width: auto;
 height: 50vh;
@@ -284,7 +299,7 @@ height: 50vh;
 
 /*about section*/
 @media (min-width:768px) {
-  .about .container,.achievements{
+  .about .container,#achievements{
     padding-left: 120px;
     padding-right: 120px;
   }
