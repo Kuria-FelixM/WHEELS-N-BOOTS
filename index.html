@@ -12,87 +12,81 @@
 
     <section class="hero">
       <div class="container">
-        <img src="img/logo.png" alt="Logo" class="position-absolute start-50 translate-middle-x">
-        <h1 class="text position-absolute top-50 start-50 translate-middle pt-md-5 mt-md-5">James Muhia</h1>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" class="position-absolute start-50 translate-middle-x"></a>
+        <h1 class="position-absolute start-50 translate-middle pt-md-5 mt-md-5 custom-h1" style="top: 80%;" >James Muhia</h1>
       </div>      
     </section>
 
-
+    
     <button class="navbar-toggler d-md-none " type="button" aria-label="Toggle navigation" onclick="toggleSidenav()">
       <span class="navbar-toggler-icon"><i class="fa-solid fa-bars fa-2xl"></i></span>
     </button>
 
 
     <!-- SIDEBAR -->
-<nav class="navbar fixed-top vh-100" id="sidenav">
-  <div class="container-fluid flex-colmn align-items-start h-100">
-    <div class="flex-column ms-4 ps-2">
-      <ul class="nav flex-column">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            About
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item">About</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="about.html">James Muhia</a></li>
-            
-            <li><a class="dropdown-item" href="#">The Three Elements</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item"></a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="projectmanaslu.html">Past Projects</a></li>
-            
-            <li><a class="dropdown-item" href="#">Upcoming Projects</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="guidedtours.html" class="nav-link">GuidedTours</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="blogs.html" class="nav-link">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a href="shop.html" class="nav-link">Shop</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Enquire
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item"></a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="projectmanaslu.html">General Enquiry</a></li>
-            
-            <li><a class="dropdown-item" href="#">Guiding Enquiry</a></li>
 
-            <li><a class="dropdown-item" href="#">Speaking Enquiry</a></li>
+    <nav class="navbar fixed-top vh-100" id="sidenav">
+      <div class="container-fluid flex-colmn align-items-start h-100">
+        <div class="flex-column ps-md-4">
+          <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">James Muhia</a></li>
+                
+                <li><a class="dropdown-item" href="">The Three Elements</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pastprojects.html">Past Projects</a></li>
+                
+                <li><a class="dropdown-item" href="upcomingprojects.html">Upcoming Projects</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Guided Tours </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gearRoom.html">Gear Room</a> <hr class="dropdown-divider">  </li>
+                <li><a class="dropdown-item" href="mtkenya.html">Mt Kenya</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="blogs.html" class="nav-link">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdownggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Enquire
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="projectmanaslu.html">General Enquiry</a></li>
+                
+                <li><a class="dropdown-item" href="#">Guiding Enquiry</a></li>
+    
+                <li><a class="dropdown-item" href="#">Speaking Enquiry</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        </div>
+      </div>
+    </nav>
+
 
     
-
-    <section class="pt-3">
-      <div class="container" id="customCarousel" p-5>
-        <div class="container-lg m-3">
-          <h2>AFFILIATES</h2>
+   <!--Affiliates section-->
+    <section class="pt-4">
+      <h2 class="text-center custom-h2">AFFILIATES</h2>
+      <div class="container" id="customCarousel" >
+        <div class="container-lg">
+          
           <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <!-- Slide 1 -->
@@ -104,7 +98,7 @@
                   </div>
                   <!-- Center Column -->
                   <div class="col-6 d-flex justify-content-center align-items-center center-column">
-                    <img src="img/logo.png" class="w-75" alt="Center Column">
+                    <img src="img/logo.png" class="w-50" alt="Center Column">
                   </div>
                   <!-- Right Column -->
                   <div class="col-3 d-flex justify-content-center align-items-center small-column">
@@ -121,7 +115,7 @@
                   </div>
                   <!-- Center Column -->
                   <div class="col-6 d-flex justify-content-center align-items-center center-column">
-                    <img src="img/logo.png" class="w-75" alt="Center Column">
+                    <img src="img/logo.png" class="w-50" alt="Center Column">
                   </div>
                   <!-- Right Column -->
                   <div class="col-3 d-flex justify-content-center align-items-center small-column">
@@ -138,7 +132,7 @@
                   </div>
                   <!-- Center Column -->
                   <div class="col-6 d-flex justify-content-center align-items-center center-column">
-                    <img src="img/logo.png" class="w-75" alt="Center Column">
+                    <img src="img/logo.png" class="w-50" alt="Center Column">
                   </div>
                   <!-- Right Column -->
                   <div class="col-3 d-flex justify-content-center align-items-center small-column">
@@ -165,26 +159,51 @@
 
     
 
-
+    <!--Footer-->
     <section class="footer">
       <div class="container-fluid" id="footer">
         <div class="row">
           <div class="col m-5">
-            <h4 class="mb-2">Follow Me</h4>
-            <p class="text-black"><i class="fa-brands fa-x-twitter"></i>  Twitter</p>
-            <p class="text-black"><i class="fa-brands fa-instagram"></i>  Instagram</p>
-            <p class="text-black"><i class="fa-brands fa-square-facebook"></i>  Facebook</p>
-          </div>
+            <div class="row">
+              <div class="col">
+
+                <h5 class="mb-2 custom-h5">Follow Me</h5>
+        
+                <a href="https://twitter.com/yourusername" target="_blank" class="text-black text-decoration-none">
+                    <p><i class="fa-brands fa-x-twitter"></i> Twitter</p>
+                </a>
+            
+                <a href="https://instagram.com/yourusername" target="_blank" class="text-black text-decoration-none">
+                    <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+                </a>
+            
+                <a href="https://facebook.com/yourusername" target="_blank" class="text-black text-decoration-none">
+                    <p><i class="fa-brands fa-square-facebook"></i> Facebook</p>
+                </a>
+              </div>
+              <div class="col pt-md-5">
+                  <a href="https://youtube.com/@yourusername" target="_blank" class="text-black text-decoration-none">
+                      <p><i class="fa-brands fa-youtube"></i> YouTube</p>
+                  </a>
+              
+                  <a href="https://www.threads.net/@yourusername" target="_blank" class="text-black text-decoration-none">
+                      <p><i class="fa-brands fa-threads"></i> Threads</p>
+                  </a>
+              
+                  <a href="https://www.tiktok.com/@yourusername" target="_blank" class="text-black text-decoration-none">
+                      <p><i class="fa-brands fa-tiktok"></i> TikTok</p>
+                  </a>
+              </div>
+            </div>
+        </div>
           <div class="col m-5">
-            <h4>Contact</h4>
+            <h class="custom-h5">Contact</h>
             <p class="text-black"><i class="fa-solid fa-phone"></i>   +254 700 000</p>
             <p class="text-black"><i class="fa-regular fa-envelope"></i> wheelsnboots</p>
           </div>
         </div>
-    
-        <h5 class="copyright">wheelsNboots © 2025 all rights reserved</h5>
-      
       </div>
+      <h5 class="text-center">wheelsNboots ©2025 all rights reserved</h5>
     </section>
 
 
