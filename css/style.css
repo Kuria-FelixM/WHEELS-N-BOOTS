@@ -33,13 +33,18 @@ html, body {
 
   .custom-h1{
     font-family: 'ZuumeRoughbold';
-    font-size: clamp(60px, 10vw, 100px);
+    font-size: clamp(60px, 10vw, 70px);
     color: var(--primary-color);
   }
 
   .custom-h2{
     font-family: 'ZuumeRoughbold';
     font-size: clamp(20px, 8vw, 50px);
+    color: var(--primary-color);
+  }
+  .custom-h3{
+    font-family: 'ZuumeRoughbold';
+    font-size: clamp(20px, 6vw, 30px);
     color: var(--primary-color);
   }
 
@@ -93,12 +98,9 @@ height: 50vh;
 }
 
 .hero-mon {
-  background: url('../img/hr-mon.jpeg') no-repeat right center;
+  background: url('../img/hgt.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .hero-mon img{
@@ -248,7 +250,8 @@ height: 50vh;
   }
 
   #latest-expeditions img{
-    height: 200px;
+    height: 80vh;
+    object-fit: cover;
   }
   #custom-rides img{
     height: 250px;
@@ -277,19 +280,5 @@ height: 50vh;
 }
 .gallery-item {
   margin-bottom: 15px;
-}
-
-
-
-@media (min-width: 768px) {
-  .copyright{
-    padding-left: 300px; 
-  }
-}
-
-@media (max-width: 768px) {
-  .copyright{
-    padding-left: 55px;
-  }
 }
 
