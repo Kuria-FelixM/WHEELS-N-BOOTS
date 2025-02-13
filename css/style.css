@@ -53,6 +53,25 @@ html, body {
     font-size: clamp(20px, 5vw, 30px);
     color: var(--light-color);
   }
+
+
+  /* Custom Bootstrap Primary Button */
+.btn-primary {
+  background-color: rgba(117, 117, 117, 0.1);  /* Custom background color */ 
+  font-family: 'ZuumeRoughbold';
+  color: var(--primary-color);
+  border-color: var(--dark-color);
+  font-size: 18px;            /* Increase font size */
+  padding: 10px 20px;         /* Adjust padding */
+  border-radius: 8px;         /* Rounded corners */
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: var(--secondary-color);  /* Darker shade on hover */
+  border-color: var(--light-color);
+  color: var(--dark-color);
+  transform: scale(1.05);    /* Slight zoom effect */
+}
   
 
 section:nth-child(2n+1){
@@ -86,27 +105,27 @@ section:nth-child(2n+1){
 }
 
 .hero-abt {
-  background: url('../img/abt-hero.jpeg') no-repeat right center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.hero-abt img{
-padding-top:0px;
-width: auto;
-height: 50vh;
-}
-
-.hero-mon {
   background: url('../img/hgt.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
 
-.hero-mon img{
-padding-top:0px;
-width: auto;
-height: 50vh;
+.hero-abt img{
+  padding-top:0px;
+  width: 22vw;
+  height: auto;
+}
+
+.hero-past {
+  background: url('../img/20180618_145105.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-past img{
+  padding-top:0px;
+  width: 22vw;
+  height: auto;
 }
 
 @media (max-width:768px){
