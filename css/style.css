@@ -80,7 +80,7 @@ section:nth-child(2n+1){
 }
 
 @media (min-width: 768px) {
-  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions, #custom-rides,#about,#achievements,#instagram,#gallery,#hero-e,#contact,#carousel-press{ 
+  #about, #products, #footer, #recent-endevours, #customCarousel, #latest-expeditions,#latest-expedition, #custom-rides,#about,#achievements,#instagram,#gallery,#hero-e,#contact,#carousel-press{ 
       margin-left: 190px;
     }
 }
@@ -104,6 +104,9 @@ section:nth-child(2n+1){
   height: auto;
 }
 
+
+
+
 .hero-abt {
   background: url('../img/hgt.jpg') no-repeat center center;
   background-size: cover;
@@ -111,6 +114,18 @@ section:nth-child(2n+1){
 }
 
 .hero-abt img{
+  padding-top:0px;
+  width: 22vw;
+  height: auto;
+}
+
+.hero-three {
+  background: url('../img/1682942117524 (1).jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-three img{
   padding-top:0px;
   width: 22vw;
   height: auto;
@@ -127,6 +142,51 @@ section:nth-child(2n+1){
   width: 22vw;
   height: auto;
 }
+
+.hero-future {
+  background: url('../img/IMG_20230914_124753.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-future img{
+  padding-top:0px;
+  width: 22vw;
+  height: auto;
+}
+
+
+.hero-mtkenya {
+  background: url('../img/IMG_2308.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-mtkenya img{
+  padding-top:0px;
+  width: 22vw;
+  height: auto;
+}
+
+.hero-gear {
+  background: url('../img/IMG_20230914_145410.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-gear img{
+  padding-top:0px;
+  width: 22vw;
+  height: auto;
+}
+
+
+.carousel-logoo{
+  padding-top:0px;
+  width: 22vw;
+  height: auto;
+}
+
 
 @media (max-width:768px){
   .hero img{
@@ -269,7 +329,11 @@ section:nth-child(2n+1){
   }
 
   #latest-expeditions img{
-    height: 80vh;
+    height: 75vh;
+    object-fit: cover;
+  }
+  #latest-expedition img{
+    height: 50vh;
     object-fit: cover;
   }
   #custom-rides img{
