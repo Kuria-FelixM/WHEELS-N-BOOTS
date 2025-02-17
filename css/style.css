@@ -47,7 +47,11 @@ html, body {
     font-size: clamp(20px, 6vw, 30px);
     color: var(--primary-color);
   }
-
+  .custom-h4{
+    font-family: 'ZuumeRoughbold';
+    font-size: clamp(20px, 8vw, 50px);
+    color: var(--light-color);
+  }
   .custom-h5{
     font-family: 'ZuumeRoughbold';
     font-size: clamp(20px, 5vw, 30px);
@@ -186,6 +190,18 @@ section:nth-child(2n+1){
   height: auto;
 }
 
+.hero-contact {
+  background: url('../img/1698391153866.JPG') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-contact img{
+  padding-top:0px;
+  width: 21vw;
+  height: auto;
+}
+
 .carousel-logoo{
   padding-top:0px;
   width: 22vw;
@@ -230,6 +246,12 @@ section:nth-child(2n+1){
   }
 
   .hero-press img{
+    width: auto;
+    height: 35vh;
+
+  }
+
+  .hero-contact img{
     width: auto;
     height: 35vh;
 
