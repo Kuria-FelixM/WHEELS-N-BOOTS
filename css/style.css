@@ -87,17 +87,11 @@ section:nth-child(2n+1){
 
   
 .hero  {
-    background: url('../img/resize-17394596531905107396heerro.jpg') no-repeat center center;
+    background: url('../img/IMG_20230914_124753.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
 }
-@media (max-width:768px) {
-  .hero  {
-    background: url('../img/heerro.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-}
-}
+
 .hero img{
   padding-top:0px;
   width: 22vw;
@@ -144,14 +138,14 @@ section:nth-child(2n+1){
 }
 
 .hero-future {
-  background: url('../img/IMG_20230914_124753.jpg') no-repeat center center;
+  background: url('../img/mt-hero.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
 
 .hero-future img{
   padding-top:0px;
-  width: 22vw;
+  width: 20vw;
   height: auto;
 }
 
@@ -176,10 +170,21 @@ section:nth-child(2n+1){
 
 .hero-gear img{
   padding-top:0px;
-  width: 22vw;
+  width: 21vw;
   height: auto;
 }
 
+.hero-press {
+  background: url('../img/1698391153866.JPG') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-press img{
+  padding-top:0px;
+  width: 21vw;
+  height: auto;
+}
 
 .carousel-logoo{
   padding-top:0px;
@@ -192,24 +197,57 @@ section:nth-child(2n+1){
   .hero img{
     width: auto;
     height: 35vh;
-
   }
-}
 
-
-@media (max-width:768px){
   .hero-abt img{
     width: auto;
     height: 35vh;
 
   }
-}
 
-@media(min-width:768px) {
+  .hero-future img{
+    width: auto;
+    height: 35vh;
+
+  }
+
+  .hero-past img{
+    width: auto;
+    height: 35vh;
+
+  }
+
+  .hero-three img{
+    width: auto;
+    height: 35vh;
+
+  }
+
+  .hero-gear img{
+    width: auto;
+    height: 35vh;
+
+  }
+
+  .hero-press img{
+    width: auto;
+    height: 35vh;
+
+  }
+
+
+  .carousel-logoo{
+    width: auto;
+    height: 35vh;
+
+  }
+
   .hero-abt .container{
   
     padding-left: 100px;
   }
+
+
 }
 
 
