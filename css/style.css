@@ -27,8 +27,8 @@ html, body {
   }
   
   @font-face{
-    font-family: 'bebas';
-    src: url('../fonts/BebasNeue.ttf') format('ttf');
+    font-family: 'Lora';
+    src: url('../fonts/FontsFree-Net-Lora-Regular.ttf') format('ttf');
   }
 
   .custom-h1{
@@ -55,6 +55,12 @@ html, body {
   .custom-h5{
     font-family: 'ZuumeRoughbold';
     font-size: clamp(20px, 5vw, 30px);
+    color: var(--light-color);
+  }
+
+  p{
+    font-family: 'Lora';
+    font-size: clamp(15px, 4vw, 20px);
     color: var(--light-color);
   }
 
