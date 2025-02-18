@@ -26,3 +26,27 @@ document.body.addEventListener("click", (e) => {
     }
 });
 
+// Fetch countries from the REST Countries API
+fetch('https://restcountries.com/v3.1/all')
+.then(response => response.json())
+.then(countries => {
+  countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
+  countries.forEach(country => {
+    // Add to Country Dropdown
+    const countryOption = document.createElement('option');
+    countryOption.value = country.cca2;
+    countryOption.textContent = `${country.flag} ${country.name.common}`;
+    document.getElementById('countryInput').appendChild(countryOption);
+
+    // Add to Phone Code Dropdown
+    if (country.idd && country.idd.root && country.idd.suffixes) {
+      country.idd.suffixes.forEach(suffix => {
+        const phoneOption = document.createElement('option');
+        phoneOption.value = country.idd.root + suffix;
+        phoneOption.textContent = `${country.flag} ${country.idd.root}${suffix}`;
+        document.getElementById('phoneCodeSelect').appendChild(phoneOption);
+      });
+    }
+  });
+})
+.catch(error => console.error('Error fetching countries:', error));
