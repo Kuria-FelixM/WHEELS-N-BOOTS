@@ -109,13 +109,16 @@ section:nth-child(2n+1){
 }
 
 
-@media (max-width:768px){
-  .hero h1{
-    top: 63%;
-  }
+.custom-top {
+  top: 62%; /* Default: 80% for small devices */
 }
 
-
+/* For medium (md) and large (lg) screens */
+@media (min-width: 768px) {  /* Bootstrap `md` breakpoint */
+  .custom-top {
+      top: 58%;
+  }
+}
 
 
 .hero-abt {
