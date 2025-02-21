@@ -162,17 +162,6 @@ section:nth-child(2n+1){
   height: auto;
 }
 
-.hero-past {
-  background: url('../img/20180618_145105.jpg') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.hero-past img{
-  padding-top:0px;
-  width: 22vw;
-  height: auto;
-}
 
 .hero-future {
   background: url('../img/mt-herooo.jpg') no-repeat left center;
@@ -207,9 +196,16 @@ section:nth-child(2n+1){
 }
 
 .hero-gear {
-  background: url('../img/IMG_20230914_145410.jpg') no-repeat center center;
+  background: url('../img/hero-gearr.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
+}
+@media (max-width: 768px) {  
+  .hero-gear {
+    background: url('../img/IMG_20230914_145410.jpg') no-repeat right center;
+    background-size: cover;
+    height: 100vh;
+  }
 }
 
 .hero-gear img{
