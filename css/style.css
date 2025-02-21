@@ -104,8 +104,15 @@ section:nth-child(2n+1){
 
 .hero img{
   padding-top:0px;
-  width: 22vw;
+  width: 20vw;
   height: auto;
+}
+
+
+@media (max-width:768px){
+  .hero h1{
+    top: 63%;
+  }
 }
 
 
