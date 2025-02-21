@@ -220,6 +220,14 @@ section:nth-child(2n+1){
   height: 100vh;
 }
 
+@media (max-width: 768px) {  
+  .hero-press {
+    background: url('../img/hero-blogs.jpg') no-repeat right center;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
 .hero-press img{
   padding-top:0px;
   width: 21vw;
