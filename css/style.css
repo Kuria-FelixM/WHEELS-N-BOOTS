@@ -136,17 +136,25 @@ section:nth-child(2n+1){
 }
 @media (max-width: 768px) {  
   .hero-abt {
-    background: url('../img/potrait_abt.jpg') no-repeat right center;
+    background: url('../img/potrait_abtt.jpg') no-repeat right center;
     background-size: cover;
     height: 100vh;
   }
 }
 
 .hero-three {
-  background: url('../img/1682942117524 (1).jpg') no-repeat center center;
+  background: url('../img/resize-17401282241312685601rrthree.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
+@media (max-width: 768px) {  
+  .hero-three {
+    background: url('../img/three.jpg') no-repeat right center;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
 
 .hero-three img{
   padding-top:0px;
@@ -448,12 +456,12 @@ section:nth-child(2n+1){
 }
 
 .img-abt{
-  height: 70vh; 
+  height: 80vh; 
   width: 35vw;
 }
 @media (max-width:768px) {
   .img-abt{
-    height: 50vh; 
+    height: 55vh; 
     width: 90vw;
   }
   
