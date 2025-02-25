@@ -60,7 +60,7 @@ html, body {
 
   p{
     font-family: 'Lora';
-    font-size: clamp(20px, 5vw, 25px);
+    font-size: clamp(18px, 4vw, 21px);
     color: var(--light-color);
   }
   .p1{
@@ -432,9 +432,17 @@ section:nth-child(2n+1){
 
   /* Style for center column */
   .center-column img {
-    opacity: 1; /* Highlight */
-    transform: scale(1.1); /* Slight zoom */
-    transition: all 0.5s ease;
+    height: 52vh;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  @media (max-width:768px) {
+    .center-column img{
+      height: 35vh; 
+      max-height: 100%;
+    object-fit: contain;
+    }
+    
   }
 
   /* On hover, make the smaller columns slightly larger */
