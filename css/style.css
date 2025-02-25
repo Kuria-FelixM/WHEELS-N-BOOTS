@@ -288,6 +288,12 @@ section:nth-child(2n+1){
 
   }
 
+  .hero-mtkenya img{
+    width: auto;
+    height: 35vh;
+
+  }
+
   .hero-gear img{
     width: auto;
     height: 35vh;
@@ -481,4 +487,18 @@ section:nth-child(2n+1){
     width: 90vw;
   }
   
+}
+
+.iframe{
+  height: 50vh; 
+  width: 38vw;
+  border-radius: 20px;
+
+}
+@media (max-width:768px) {
+  .iframe{
+    height: 50vh; 
+    width: 90vw;
+    border-radius: 20px;
+  }
 }
