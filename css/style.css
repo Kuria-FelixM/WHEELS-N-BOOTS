@@ -60,6 +60,11 @@ html, body {
 
   p{
     font-family: 'Lora';
+    font-size: clamp(20px, 5vw, 25px);
+    color: var(--light-color);
+  }
+  .p1{
+    font-family: 'Lora';
     font-size: clamp(15px, 4vw, 20px);
     color: var(--light-color);
   }
