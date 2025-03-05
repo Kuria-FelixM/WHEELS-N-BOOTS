@@ -62,6 +62,7 @@ html, body {
     font-family: 'Lora';
     font-size: clamp(18px, 4vw, 21px);
     color: var(--light-color);
+    text-align: justify;
   }
   .p1{
     font-family: 'Lora';
