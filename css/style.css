@@ -497,6 +497,12 @@ section:nth-child(2n+1){
     height: 50vh; 
     width: 90vw;
   }
+  .img-ab {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures full image is visible */
+    max-width: 100%;
+}
   
 }
 
