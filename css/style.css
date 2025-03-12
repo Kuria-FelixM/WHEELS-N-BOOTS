@@ -170,7 +170,7 @@ section:nth-child(2n+1){
 
 
 .hero-future {
-  background: url('../img/khantegri.jpg') no-repeat left center;
+  background: url('../img/khantegri.jpg') no-repeat top center;
   background-size: cover;
   height: 100vh;
 }

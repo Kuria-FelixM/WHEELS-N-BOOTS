@@ -82,59 +82,91 @@
 </nav>
 
 
-  <section>
-    <div class="container my-5 px-md-5 " id="contact">
+<section>
+  <div class="container my-5 px-md-5" id="contact">
       <h1 class="custom-h4 text-center">Speaking Enquiry</h1>
 
-    <div class="row px-md-5">
-      <h class="custom-h5">Details</h>
-      <!-- First Column -->
-      <div class="col-md-6">
-        <div class="mb-3">
-          <label for="nameInput" class="form-label">Name</label>
-          <input type="text" class="form-control" id="nameInput" placeholder="Name">
-        </div>
-        <div class="mb-3">
-          <label for="countryInput" class="form-label">Country</label>
-          <select class="form-select" id="countryInput">
-            <option selected>Select Country</option>
-          </select>
-        </div>
-        
-      </div>
-      <!-- Second Column -->
-      <div class="col-md-6">
-        <div class="mb-3">
-          <label for="phoneInput" class="form-label">Phone Number</label>
-          <div class="input-group">
-            <span class="input-group-text">🌐</span>
-            <select class="form-select" id="phoneCodeSelect" style="max-width: 120px;">
-              <option selected>+1 🇺🇸</option>
-            </select>
-            <input type="tel" class="form-control" placeholder="123-456-7890" id="phoneInput">
+      <form onsubmit="sendEmail(event)">
+          <div class="row px-md-5">
+              <h5 class="custom-h5">Details</h5>
+
+              <!-- First Column -->
+              <div class="col-md-6">
+                  <div class="mb-3">
+                      <label for="nameInput" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="nameInput" placeholder="Name" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="countryInput" class="form-label">Country</label>
+                      <select class="form-select" id="countryInput" required>
+                          <option selected disabled>Select Country</option>
+                          <option value="USA">United States</option>
+                          <option value="UK">United Kingdom</option>
+                          <option value="Canada">Canada</option>
+                          <option value="Kenya">Kenya</option>
+                          <option value="Other">Other</option>
+                      </select>
+                  </div>
+              </div>
+
+              <!-- Second Column -->
+              <div class="col-md-6">
+                  <div class="mb-3">
+                      <label for="phoneInput" class="form-label">Phone Number</label>
+                      <div class="input-group">
+                          <span class="input-group-text">🌐</span>
+                          <select class="form-select" id="phoneCodeSelect" style="max-width: 120px;">
+                              <option selected>+1 🇺🇸</option>
+                              <option>+44 🇬🇧</option>
+                              <option>+254 🇰🇪</option>
+                          </select>
+                          <input type="tel" class="form-control" placeholder="123-456-7890" id="phoneInput" required>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="emailInput" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="mb-3">
-          <label for="emailInput" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-        </div>
-      </div>
-    </div>
 
-    <div class="mb-3 px-md-5">
-      <label for="exampleFormControlTextarea1" class="form-label"><h1 class="custom-h5">Event</h1></label>
-      <textarea class="form-control" placeholder="Name and Event details" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <!-- Submit Button Row -->
-<div class="row">
-  <div class="col-12 text-center">
-    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          <div class="mb-3 px-md-5">
+              <label for="eventDetails" class="form-label">
+                  <h5 class="custom-h5">Event</h5>
+              </label>
+              <textarea class="form-control" placeholder="Name and Event details" id="eventDetails" rows="3" required></textarea>
+          </div>
+
+          <!-- Submit Button Row -->
+          <div class="row">
+              <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+              </div>
+          </div>
+      </form>
   </div>
-</div>
+</section>
 
-      
-    </div>
-  </section>
+<script>
+  function sendEmail(event) {
+      event.preventDefault();
+
+      // Get form values
+      const name = document.getElementById("nameInput").value;
+      const country = document.getElementById("countryInput").value;
+      const phoneCode = document.getElementById("phoneCodeSelect").value;
+      const phone = document.getElementById("phoneInput").value;
+      const email = document.getElementById("emailInput").value;
+      const eventDetails = document.getElementById("eventDetails").value;
+
+      // Construct mailto link
+      const subject = encodeURIComponent("Speaking Enquiry from " + name);
+      const body = encodeURIComponent(`Name: ${name}\nCountry: ${country}\nPhone: ${phoneCode} ${phone}\nEmail: ${email}\n\nEvent Details:\n${eventDetails}`);
+
+      // Open email client
+      window.location.href = `mailto:info@wheelsnboots.com?subject=${subject}&body=${body}`;
+  }
+</script>
 
 
   <!--Footer-->
