@@ -76,65 +76,65 @@
                         <h3 class="custom-h3">Partner with Us</h3>
                     </div>
                     <div class="card-body">
-                        <form action="mailto:info@wheelsnboots.com" method="post" enctype="text/plain">
-                            <div class="row">
-                                <!-- Event Dropdown -->
+                      <form action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="dc415a0e-d5d8-42a8-9413-5e532c6c32ce">
+                    
+                        <!-- Event Dropdown -->
+                        <div class="mb-3">
+                            <label class="form-label">Upcoming Projects</label>
+                            <select class="form-select" name="project" required>
+                                <option selected disabled>Select a Project</option>
+                                <option value="everest_climb">Tour of the Stans</option>
+                                <option value="kilimanjaro_summit">County tour</option>
+                                <option value="andes_expedition">K2, The Ultimate Challenge</option>
+                            </select>
+                        </div>
+                    
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label">Upcoming Projects</label>
-                                    <select class="form-select" required>
-                                        <option selected disabled>Select a Project</option>
-                                        <option value="everest_climb">Tour of the Stans</option>
-                                        <option value="kilimanjaro_summit">County tour</option>
-                                        <option value="andes_expedition">K2, The Ultimate Challenge</option>
-                                    </select>
+                                    <label class="form-label">Organization Name</label>
+                                    <input type="text" name="organization_name" class="form-control" placeholder="Enter Organization Name" required>
+                                </div>
+                    
+                                <div class="mb-3">
+                                    <label class="form-label">Contact Person</label>
+                                    <input type="text" name="contact_person" class="form-control" placeholder="Enter Contact Person Name" required>
+                                </div>
+                    
+                                <div class="mb-3">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
                                 </div>
                             </div>
-                            <div class="row">
-                                <!-- Left Column -->
-                                <div class="col-md-6">
-                                    <!-- Organization Name -->
-                                    <div class="mb-3">
-                                        <label class="form-label">Organization Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter Organization Name" required>
-                                    </div>
-
-                                    <!-- Contact Person -->
-                                    <div class="mb-3">
-                                        <label class="form-label">Contact Person</label>
-                                        <input type="text" class="form-control" placeholder="Enter Contact Person Name" required>
-                                    </div>
-
-                                    <!-- Email -->
-                                    <div class="mb-3">
-                                        <label class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" placeholder="Enter Email" required>
-                                    </div>
-
+                    
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Type of Partnership</label>
+                                    <input type="text" name="partnership_type" class="form-control" placeholder="E.g., Sponsorship, Event Collaboration, Logistics Support" required>
                                 </div>
-
-                                <!-- Right Column -->
-                                <div class="col-md-6">
-                                    <!-- Type of Partnership -->
-                                    <div class="mb-3">
-                                        <label class="form-label">Type of Partnership</label>
-                                        <input type="text" class="form-control" placeholder="E.g., Sponsorship, Event Collaboration, Logistics Support" required>
-                                    </div>
-
-                                    
-
-                                    <!-- Message -->
-                                    <div class="mb-3">
-                                        <label class="form-label">Message</label>
-                                        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-                                    </div>
+                    
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
                                 </div>
                             </div>
-
-                            <!-- Submit Button -->
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary w-100">Submit Partnership Request</button>
-                            </div>
-                        </>
+                        </div>
+                    
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                        <!-- Custom Confirmation / Success Page (Optional) -->
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                    
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary w-100">Submit Partnership Request</button>
+                        </div>
+                    </form>
+                    
                     </div>
                 </div>
             </div>
