@@ -176,7 +176,7 @@ section:nth-child(2n+1){
 }
 @media (max-width: 768px) {  
   .hero-future {
-    background: url('../img/khantegri\(1\).jpg') no-repeat center center;
+    background: url('../img/khantegrism.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
   }
