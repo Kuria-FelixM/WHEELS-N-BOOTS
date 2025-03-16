@@ -248,7 +248,7 @@ section:nth-child(2n+1){
 
 .hero-contact img{
   padding-top:0px;
-  width: 21vw;
+  width: 15vw;
   height: auto;
 }
 
@@ -257,6 +257,7 @@ section:nth-child(2n+1){
   width: 22vw;
   height: auto;
 }
+
 
 
 @media (max-width:768px){
@@ -317,6 +318,12 @@ section:nth-child(2n+1){
   .carousel-logoo{
     width: auto;
     height: 35vh;
+
+  }
+
+  .logo{
+    width: auto;
+    height: 15vh;
 
   }
 
