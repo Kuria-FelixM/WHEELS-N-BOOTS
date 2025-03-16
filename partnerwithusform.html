@@ -74,81 +74,126 @@
         </div>
       </nav>
     
-    <div class="container">
-        <div class="row justify-content-center" id="#achievements"  style="padding-top: 32vh;">
+      <div class="container">
+        <div class="row justify-content-center" id="achievements" style="padding-top: 32vh;">
             <div class="col-lg-10">
                 <div class="card shadow-lg">
                     <div class="card-header text-white text-center">
                         <h3 class="custom-h3">Partner with Us</h3>
                     </div>
                     <div class="card-body">
-                      <form action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Replace with your Access Key -->
-                        <input type="hidden" name="access_key" value="dc415a0e-d5d8-42a8-9413-5e532c6c32ce">
-                    
-                        <!-- Event Dropdown -->
-                        <div class="mb-3">
-                            <label class="form-label">Upcoming Projects</label>
-                            <select class="form-select" name="project">
-                                <option selected disabled>Select a Project</option>
-                                <option value="everest_climb">Tour of the Stans</option>
-                                <option value="kilimanjaro_summit">County tour</option>
-                                <option value="andes_expedition">K2, The Ultimate Challenge</option>
-                            </select>
-                        </div>
-                    
-                        <div class="row">
-                            <!-- Left Column -->
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Organization Name</label>
-                                    <input type="text" name="organization_name" class="form-control" placeholder="Enter Organization Name">
+                        <form id="partnershipForm">
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="dc415a0e-d5d8-42a8-9413-5e532c6c32ce">
+    
+                            <!-- Event Dropdown -->
+                            <div class="mb-3">
+                                <label class="form-label">Upcoming Projects</label>
+                                <select class="form-select" name="project">
+                                    <option selected disabled>Select a Project</option>
+                                    <option value="everest_climb">Tour of the Stans</option>
+                                    <option value="kilimanjaro_summit">County tour</option>
+                                    <option value="andes_expedition">K2, The Ultimate Challenge</option>
+                                </select>
+                            </div>
+    
+                            <div class="row">
+                                <!-- Left Column -->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Organization Name</label>
+                                        <input type="text" name="organization_name" class="form-control" placeholder="Enter Organization Name">
+                                    </div>
+    
+                                    <div class="mb-3">
+                                        <label class="form-label">Contact Person</label>
+                                        <input type="text" name="contact_person" class="form-control" placeholder="Enter Contact Person Name">
+                                    </div>
+    
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                                    </div>
                                 </div>
-                    
-                                <div class="mb-3">
-                                    <label class="form-label">Contact Person</label>
-                                    <input type="text" name="contact_person" class="form-control" placeholder="Enter Contact Person Name">
-                                </div>
-                    
-                                <div class="mb-3">
-                                    <label class="form-label">Email Address</label>
-                                    <input type="email" name="email" class="form-control" placeholder="Enter Email">
+    
+                                <!-- Right Column -->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Type of Partnership</label>
+                                        <input type="text" name="partnership_type" class="form-control" placeholder="E.g., Sponsorship, Event Collaboration, Logistics Support">
+                                    </div>
+    
+                                    <div class="mb-3">
+                                        <label class="form-label">Message</label>
+                                        <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                    
-                            <!-- Right Column -->
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Type of Partnership</label>
-                                    <input type="text" name="partnership_type" class="form-control" placeholder="E.g., Sponsorship, Event Collaboration, Logistics Support">
-                                </div>
-                    
-                                <div class="mb-3">
-                                    <label class="form-label">Message</label>
-                                    <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
-                                </div>
+    
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary w-100">Submit Partnership Request</button>
                             </div>
-                        </div>
-                    
-                        <!-- Honeypot Spam Protection -->
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    
-                        <!-- Custom Confirmation / Success Page (Optional) -->
-                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-                    
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary w-100">Submit Partnership Request</button>
-                        </div>
-                    </form>
-                    
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Success Popup Modal -->
+    <div id="partnershipSuccessPopup" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Your partnership request has been submitted successfully!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript to Handle Form Submission -->
+    <script>
+        document.getElementById("partnershipForm").addEventListener("submit", async function (event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            let form = event.target;
+            let formData = new FormData(form);
+    
+            try {
+                let response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData
+                });
+    
+                let result = await response.json();
+    
+                if (result.success) {
+                    // Show Bootstrap Modal for Success
+                    let successPopup = new bootstrap.Modal(document.getElementById('partnershipSuccessPopup'));
+                    successPopup.show();
+    
+                    // Reset form after submission
+                    form.reset();
+                } else {
+                    alert("There was an error submitting the form. Please try again.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Something went wrong. Please try again.");
+            }
+        });
+    </script>
+    
+    <!-- Bootstrap JS (Ensure it's included for modal functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

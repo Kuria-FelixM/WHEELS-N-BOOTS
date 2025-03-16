@@ -83,77 +83,129 @@
 
 
   <section>
-    <div class="container my-5 px-md-5 " id="contact">
-      <h1 class="custom-h4 text-center">General Enquiry</h1>
-      
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <!-- Web3Forms Access Key -->
-        <input type="hidden" name="access_key" value="dc415a0e-d5d8-42a8-9413-5e532c6c32ce">
-    
-        <div class="row px-md-5">
-            <h5 class="custom-h5">Details</h5>
-    
-            <!-- First Column -->
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="nameInput" class="form-label">Name</label>
-                    <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name">
-                </div>
-    
-                <div class="mb-3">
-                    <label for="countryInput" class="form-label">Country</label>
-                    <select name="country" class="form-select" id="countryInput">
-                        <option selected disabled>Select Country</option>
-                        <option value="USA">United States</option>
-                        <option value="UK">United Kingdom</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-            </div>
-    
-            <!-- Second Column -->
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="phoneInput" class="form-label">Phone Number</label>
-                    <div class="input-group">
-                        <span class="input-group-text">🌐</span>
-                        <select name="phone_code" class="form-select" id="phoneCodeSelect" style="max-width: 120px;">
-                            <option selected>+1 🇺🇸</option>
-                            <option value="+44">+44 🇬🇧</option>
-                            <option value="+254">+254 🇰🇪</option>
+    <div class="container my-5 px-md-5" id="contact">
+        <h1 class="custom-h4 text-center">General Enquiry</h1>
+
+        <form id="contactForm">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="dc415a0e-d5d8-42a8-9413-5e532c6c32ce">
+
+            <div class="row px-md-5">
+                <h5 class="custom-h5">Details</h5>
+
+                <!-- First Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="countryInput" class="form-label">Country</label>
+                        <select name="country" class="form-select" id="countryInput">
+                            <option selected disabled>Select Country</option>
+                            <option value="USA">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Other">Other</option>
                         </select>
-                        <input type="tel" name="phone" class="form-control" placeholder="123-456-7890" id="phoneInput">
                     </div>
                 </div>
-    
-                <div class="mb-3">
-                    <label for="emailInput" class="form-label">Email Address</label>
-                    <input type="email" name="email" class="form-control" id="emailInput" placeholder="name@example.com">
+
+                <!-- Second Column -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="phoneInput" class="form-label">Phone Number</label>
+                        <div class="input-group">
+                            <span class="input-group-text">🌐</span>
+                            <select name="phone_code" class="form-select" id="phoneCodeSelect" style="max-width: 120px;">
+                                <option selected>+1 🇺🇸</option>
+                                <option value="+44">+44 🇬🇧</option>
+                                <option value="+254">+254 🇰🇪</option>
+                            </select>
+                            <input type="tel" name="phone" class="form-control" placeholder="123-456-7890" id="phoneInput">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email Address</label>
+                        <input type="email" name="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3 px-md-5">
+                <label for="enquiryDetails" class="form-label">
+                    <h5 class="custom-h5">Enquiry</h5>
+                </label>
+                <textarea name="message" class="form-control" placeholder="Your Message" id="enquiryDetails" rows="3"></textarea>
+            </div>
+
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Success Popup Modal -->
+        <div id="successPopup" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Success</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Your message has been sent successfully!</p>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <div class="mb-3 px-md-5">
-            <label for="enquiryDetails" class="form-label">
-                <h5 class="custom-h5">Enquiry</h5>
-            </label>
-            <textarea name="message" class="form-control" placeholder="Your Message" id="enquiryDetails" rows="3"></textarea>
-        </div>
-    
-        <!-- Honeypot Spam Protection -->
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-    
-        <div class="row">
-            <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary mt-3">Submit</button>
-            </div>
-        </div>
-    </form>
-    
+
     </div>
-  </section>
+</section>
+
+<!-- JavaScript to Handle Form Submission -->
+<script>
+    document.getElementById("contactForm").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent form from redirecting
+
+        let form = event.target;
+        let formData = new FormData(form);
+
+        try {
+            let response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            let result = await response.json();
+
+            if (result.success) {
+                // Show Bootstrap Modal for Success
+                let successPopup = new bootstrap.Modal(document.getElementById('successPopup'));
+                successPopup.show();
+
+                // Clear the form after successful submission
+                form.reset();
+            } else {
+                alert("There was an error submitting the form. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Something went wrong. Please try again.");
+        }
+    });
+</script>
+
+<!-- Bootstrap JS (Ensure it's included for modal functionality) -->
+
+
 
 
   <!--Footer-->
@@ -206,7 +258,7 @@
     <p class="text-center py-3 p1">Wheels N' Boots ©2025 all rights reserved</p>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
